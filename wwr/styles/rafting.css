@@ -39,22 +39,71 @@ h1, h2 {
 }
 
 nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
+    margin: 4px;
+    padding: 4px;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 .socialmedia {
     text-decoration: none;
+    line-height: 0;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: auto;
+    display: block;
+}
+
+.socialmedia a {
+    display: inline-block;
 }
 
 .hero {
     position: relative;
+    width: 1024px;
+    height: 576px;
+    overflow: hidden;
+}
+
+.hero h1,
+.hero article {
+    position: absolute;
+    z-index: 2; /* ABOVE the image */
+    color: white; /* or adjust for contrast */
+}
+
+
+.hero h1 {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    
+}
+
+.hero article {
+    top: 100px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.5); /* optional */
+    padding: 1em;
+    color: white;
+    max-width: 300px;
 }
 
 .hero img {
-    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover; /* keeps image from stretching */
 }
 
 h1 {
@@ -65,15 +114,30 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--primary-color);
+    
     color: #fff; /* white text - make sure there is enough contrast with the background-color */
 }
 
-article {
-    position: absolute;
+h2 {
+    margin: 20px;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 .hero article img {
     float: left;
     width: 125px;
+    position: absolute;
 } 
 
+#captions {
+    padding: 0px;
+    margin: auto;
+    color: black;
+    font-family:'Tahoma', Times, serif;
+    font-size: small;
+}
+
+#copyright {
+    color: black;
+}
