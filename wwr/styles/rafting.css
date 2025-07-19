@@ -92,7 +92,7 @@ nav, p, section, article {
     align-items: flex-start;
     gap: 12px;
     flex-direction: row-reverse; /* image on right */
-    top: 460px;
+    top: 435px;
     left: 20px;
     background: rgba(0, 0, 0, 0.5);
     padding: 1em;
