@@ -143,7 +143,7 @@ h2 {
     margin-left: 0;
 }
 
-#captions {
+#captions, #caption1, #caption2, #caption3, #caption4 {
     padding: 0px;
     margin: auto;
     color: black;
