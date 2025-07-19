@@ -91,7 +91,7 @@ nav, p, section, article {
     display: flex;
     align-items: flex-start;
     gap: 12px;
-    flex-direction: row-reverse; /* image on right */
+    flex-direction: row; /* image on right */
     top: 435px;
     left: 20px;
     background: rgba(0, 0, 0, 0.5);
@@ -99,7 +99,7 @@ nav, p, section, article {
     color: white;
     max-width: 96%;
     position: absolute;
-    z-index: 2;
+    z-index: 0;
 }
 
 .hero article img {
@@ -111,6 +111,8 @@ nav, p, section, article {
 
 .hero article p {
     margin: 0;
+    z-index: 1;
+    float: left;
 }
 
 
