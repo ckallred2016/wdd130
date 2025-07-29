@@ -73,15 +73,7 @@ header {
 	text-decoration: underline;
 }
 
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-}
-
-h2 {
+h1, h2 {
     text-align: center; 
     margin: 0 0;
     font-family: var(--heading-font);
@@ -180,11 +172,51 @@ h2 {
     max-width: 100%;
 }
 
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    padding: 1rem;
+}
+.grid2 h1 {
+    grid-column: 1;
+    font-size: 2.5rem;
+    color: var(--accent2-color)
+    margin-bottom: 0.5rem;
+}
+
+.contact_info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-self: center;
+}
+
+.map {
+    justify-self: center;
+    align-self: start;
+}
+
 nav, p, section {
     margin: 0 0 6px 0;
     padding: 10px;
     padding-left: 0;
     margin-left: 0;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.email {
+    color: var(--accent2-color);
+}
+
+.email:hover {
+	color: var(--secondary-color);
+	font-weight: 700;
+	text-decoration: underline;
 }
 
 section {
