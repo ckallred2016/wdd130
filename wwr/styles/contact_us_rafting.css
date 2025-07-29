@@ -175,27 +175,35 @@ h1, h2 {
 .grid2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
     gap: 1rem;
     padding: 1rem;
 }
 .grid2 h1 {
-    grid-column: 1;
     font-size: 2.5rem;
-    color: var(--accent2-color)
-    margin-bottom: 0.5rem;
+    color: var(--accent2-color);
+    margin: 0 0 0.25rem 0;
+}
+
+.info_wrapper {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-self: center;
+    gap: 2.5rem;
 }
 
 .contact_info {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    align-self: center;
+    margin: 0;
 }
 
 .map {
     justify-self: center;
     align-self: start;
+    grid-column: 2;
 }
 
 nav, p, section {
