@@ -244,28 +244,33 @@ section:last-of-type {
 figure {
     display: flex;
     flex-flow: column;
+    align-items: center;
     padding: 5px;
-    max-width: 160px;
+    max-width: 200px;
     margin: 0;
+    text-align: center;
 }
 
 .figure-row {
     display: flex;
     justify-content: space-evenly;
     gap: 1rem;
-    flex-wrap: nowrap; 
-    overflow-x: auto;  
+    flex-wrap: wrap; 
+    padding: 1rem 0;  
 }
 
 figcaption {
     font-size: 1.2rem;
     text-align: center;
+    margin-top: 0.5rem;
     font-family: var(--body-font);
+    text-align: center;
 }
 
 figure img {
-    width: auto;
-    height: auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 footer {
