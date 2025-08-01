@@ -56,11 +56,44 @@
             </div>    
         </section>
     
-        <section class="grid">
-            <h2>Send Us a Message</h2>
-            <!-- <p>Down the River: White River Rafting Company was founded in 1898 by George Down. While growing up, Down lived by a river and often, as a young boy, his he and his friends would play in it. as teenagers, they had an idea to figure out how to float and stay floating as they went down the river.It worked and after hitting some major rapids, they crashed so many times, they had to figure out a better floating device. </p>
-            <img src="images/history1.jpg" alt="2 Rafts ready to go">
-            <p>Floating down the river one day, Down saw what looked like a very durable, big plastic boat. They were so excited! They asked these friends where they got it. After purchasing one of there own, they went on many, many adventures. After some time and growing up, Down decided to start his own White River Rafting Company. Welcome to Down the River. Let's have an adventure!</p> -->
+        <section>
+            <div class=form-wrapper>
+                <h2>Send Us a Message</h2>
+                <form>
+                    <fieldset>
+                        <div class="inline-field">
+                            <label for="fullname">Fullname: </label>
+                            <input type="text" id="fullname" name="fullname">
+                        </div>
+                        <div class="inline-field">
+                            <label for="useremail">Email address: </label>
+                            <input type="email" id="useremail" name="useremail">
+                        </div>
+                        <div>
+                            <h4>Select one reason for your inquiry:</h4>
+                            <input type="radio" id="generalinquiry" name="inquiry_type">
+                            <label for="inquiry">General Inquiry</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="reservationwquestion" name="inquiry_type">
+                            <label for="reservation">Reservation Question</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="websitesuggestion" name="inquiry_type">
+                            <label for="suggestion">Website Suggestion</label>
+                            <label for="inquiry"></label>
+                            <textarea id="inquiry" name="inquiry" rows="8" placeholder="Please type your inquiry here..."></textarea>
+                        </div>
+                        <div class="checkbox-option">
+                            <label for="subscription">Please subscribe me to the monthly newsletter!</label>
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                        </div>
+                        <div class="button-container">
+                            <button type="select">Submit</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div> 
         </section>
     </main>
 
@@ -76,6 +109,9 @@
             <a href="https://instagram.com">
                 <img src="images/instagram_logo.png"  alt="Link to Instagram website">
             </a>
+        </nav>
+        <nav class="wireframe">
+            <a href="https://app.moqups.com/1zZ3JWpJmKBNB41t7uKM37tCXt2l6J9n/view/page/ad12de680"></a>
         </nav>
     </footer>
 </body>

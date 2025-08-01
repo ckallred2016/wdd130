@@ -143,34 +143,6 @@ h1, h2 {
     margin: 0;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    gap: 0.25rem;
-    align-items: start;
-    padding: 1rem;
-    margin-top: -2em;
-}
-.grid h2 {
-    grid-row: 1;
-    grid-column: 1 / -1;
-    text-align: center;
-    margin-bottom: 0.05rem;
-}
-
-.grid p {
-    justify-self: center;
-    align-self: center;
-}
-
-.grid img {
-    height: 175px;
-    justify-self: center;
-    align-self: center;
-    width: 250px;
-    max-width: 100%;
-}
 
 .grid2 {
     display: grid;
@@ -271,6 +243,119 @@ figure img {
     width: 200px;
     height: 200px;
     object-fit: cover;
+}
+
+form {
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    border: none;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 0.5rem;
+    border: none;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+label, input, button, textarea, h4 {
+    font-family: "Quicksand", Arial, sans-serif;
+}
+
+label {
+    text-align: left;
+    padding-left: 0.5rem;
+    font-size: 1.1rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: normal; /* optional: removes bold if desired */
+    margin: 0; /* optional: reduce spacing */
+    padding: 0.5rem;
+}
+
+.inline-field {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.inline-field label {
+    width: auto;
+    text-align: right;
+    padding: 0;
+}
+
+.inline-field input {
+    flex: 1;
+    width: auto;
+}
+
+input[type="checkbox"], select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    width: 100%;
+}
+textarea {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    padding: 0.75rem;
+}
+
+input[type="text"]
+input[type="email"] {
+    width: 100%;
+    height: 2.5rem;
+    color: var(--secondary-color);
+    font-size: medium;
+}
+
+input:not([type="checkbox"]):not([type="radio"]) {
+    height: 2.75rem;
+    font-size: 1.1rem; 
+    padding: 0 0.75rem; 
+}
+
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.checkbox-option label {
+    white-space: nowrap; /* prevent wrapping */
+    font-size: 1.1rem;    /* match other labels */
+}
+
+button {
+    margin: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
 }
 
 footer {
