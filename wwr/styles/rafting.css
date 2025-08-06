@@ -495,6 +495,15 @@ footer {
 
 /* Specifically Index.html CSS */
 
+.figure-row3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
+    padding: 20px 0;
+}
+
 .hero_index {
     position: relative;
     display: inline-block;
@@ -618,54 +627,11 @@ footer {
 
 /* Specifically Trips section */
 
-/* .trips_h1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-    color: var(--accent2-color);
-}
-
-.trip-row {
-    display: flex;
-    gap: 20px;
-}
-
-.trip-row h2 {
-    font-size: 3rem;
-    padding-bottom: 15px;
-    font-family: var(--body-font);
-}
-
-.trip_row_section {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    flex: 1;
-    height: 100%;
-    min-height: 500px;
-    position: relative;
-}
-
-.trip-row > section {
-    align-items: stretch;
-}
-
-.trip_row_section p {
-    font-size: 1.2rem;
-    text-align: left;
-}
-
 .trip_row_section h5 {
     font-size: 2rem;
     color: var(--accent2-color);
     padding-bottom: 1rem;
-} */
+}
 
 table {
     width: 100%;
@@ -697,7 +663,7 @@ tbody tr {
     background-color: var(--secondary-color);
 }
 
-.table h1 {
+.table_information h1 {
     text-align: center;
     color: var(--accent2-color);
 }
