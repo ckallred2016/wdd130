@@ -710,10 +710,12 @@ footer {
     font-family: var(--body-font);
 }
 
-.trip_article h3 {
+.trip_section_1 h3,
+.trip_section_3 h3,
+.trip_section_4 h3 {
     font-size: 1.5rem;
     color: var(--accent2-color);
-    background: var(--primary-color);
+    text-align: center;
 }
 
 .trip_article p {
