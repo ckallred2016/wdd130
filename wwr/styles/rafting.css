@@ -377,8 +377,8 @@ label {
 
 h4 {
     font-size: 1.2rem;
-    font-weight: normal; /* optional: removes bold if desired */
-    margin: 0; /* optional: reduce spacing */
+    font-weight: normal; 
+    margin: 0;
     padding: 0.5rem;
 }
 
@@ -431,8 +431,8 @@ input:not([type="checkbox"]):not([type="radio"]) {
 }
 
 .checkbox-option label {
-    white-space: nowrap; /* prevent wrapping */
-    font-size: 1.1rem;    /* match other labels */
+    white-space: nowrap; 
+    font-size: 1.1rem;    
 }
 
 button {
@@ -467,13 +467,13 @@ footer {
 }
 
 #copyright {
-    grid-column: 2;       /* center column */
+    grid-column: 2;       
     text-align: center;
     color: black;
 }
 
 .socialmedia {
-    grid-column: 3;       /* right column */
+    grid-column: 3;       
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -594,14 +594,97 @@ footer {
 }
 
 .index_form_section > div:first-child img {
-    margin-top: .8rem; /* Adjust value as needed */
+    margin-top: .8rem;
 }
 
 .hero_index,
 .no_border {
     width: 1024px;
-    margin: 0 auto;  /* Center horizontally */
+    margin: 0 auto;
 }
 
 
 /* Specifically Trips section */
+
+.trip-row {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: nowrap; 
+    overflow-x: auto;  
+}
+
+.trip_container,
+.trip_container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.trip_section_1,
+.trip_section_2,
+.trip_section_3,
+.trip_section_4 {
+    background-color: var(--secondary-color); 
+    padding: 20px;
+    box-sizing: border-box;
+    
+    border-radius: 8px;
+}
+
+.trip_article img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.trip_article h1,
+.trip_article h2,
+.trip_article p {
+    margin: 0 0 10px 0;
+}
+
+.trip_container section,
+.trip_container2 section {
+    width: 100%;
+    height: 100%;
+}
+
+
+.trip_section_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 100%;
+    padding: 20px;
+    background-color: var(--secondary-color); 
+    box-sizing: border-box;
+}
+
+
+.trip_section_2 article {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+
+
+.trip_join_us {
+    color: var(--accent2-color);
+    font-size: 5rem;
+    margin-bottom: 20px; 
+}
+
+.join_us_button {
+    margin: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 2rem;
+}
