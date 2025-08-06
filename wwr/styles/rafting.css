@@ -622,6 +622,12 @@ footer {
     gap: 20px;
 }
 
+.trip-row h2 {
+    font-size: 3rem;
+    padding-bottom: 15px;
+    font-family: var(--body-font);
+}
+
 .trip_row_section {
     display: flex;
     flex-direction: column;
@@ -661,7 +667,6 @@ footer {
     padding-bottom: 1rem;
 }
 
-
 .trip_container,
 .trip_container2 {
     display: grid;
@@ -699,9 +704,10 @@ footer {
     border-radius: 5px;
 }
 
-.trip_article h1 {
+.trip_article h2 {
     font-size: 2.5rem;
     color: var(--accent2-color);
+    font-family: var(--body-font);
 }
 
 .trip_article h3 {
@@ -733,19 +739,17 @@ footer {
     box-sizing: border-box;
 }
 
-
 .trip_section_2 article {
     text-align: center;
     padding: 10px;
     border-radius: 8px;
-
 }
-
 
 .trip_join_us {
     color: var(--accent2-color);
     font-size: 5rem;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+    font-family: var(--body-font); 
 }
 
 .join_us_button {
@@ -755,6 +759,8 @@ footer {
     border: none;
     border-radius: .5rem;
     padding: .75rem;
-    font-size: 2rem;
+    font-size: 2.25rem;
+    font-family: var(--body-font);
+    text-decoration: none;
 }
 
