@@ -504,6 +504,8 @@ footer {
     margin: 0;
     font-size: 2rem;
     color: var(--secondary-color);
+    font-family: var(--body-font);
+    padding-top: 15px;
 }
 
 .hero_index article {
@@ -602,6 +604,14 @@ footer {
 .no_border {
     width: 1024px;
     margin: 0 auto;
+}
+
+.figure_row_h2 {
+    font-family: var(--body-font);
+    color: var(--accent2-color);
+    padding-top: 20px;
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 
