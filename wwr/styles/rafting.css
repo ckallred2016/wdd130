@@ -505,7 +505,7 @@ footer {
     font-size: 2rem;
     color: var(--secondary-color);
     font-family: var(--body-font);
-    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .hero_index article {
@@ -544,12 +544,13 @@ footer {
     border: none;
     border-radius: .5rem;
     padding: .75rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
 .index_button:hover {
-    background-color: var(--accent1-color);
-    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
 }
 
 .index_form_section {
