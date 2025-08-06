@@ -607,13 +607,60 @@ footer {
 
 /* Specifically Trips section */
 
+.trips_h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: var(--accent2-color);
+}
+
 .trip-row {
     display: flex;
-    justify-content: space-evenly;
-    gap: 1rem;
-    flex-wrap: nowrap; 
-    overflow-x: auto;  
+    gap: 20px;
 }
+
+.trip_row_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+    height: 100%;
+    min-height: 500px;
+    position: relative;
+}
+
+.trip-row > section {
+    align-items: stretch;
+}
+
+.trip_row_section p {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.trip_row_section h5 {
+    font-size: 2rem;
+    color: var(--accent2-color);
+    padding-bottom: 1rem;
+}
+
+.trip_row_section h6 {
+    font-size: 1.25rem;
+    color: var(--accent1-color);
+    padding-bottom: 1rem;
+}
+.trip_row_section h1{
+    font-size: 3rem;
+    color: var(--accent2-color);
+    padding-bottom: 1rem;
+}
+
 
 .trip_container,
 .trip_container2 {
@@ -645,14 +692,12 @@ footer {
 }
 
 .trip_article img {
-    height: 160px;
-    width: 200px;
+    height: 250px;
+    width: 400px;
     margin-bottom: 10px;
     object-fit: cover;
     border-radius: 5px;
 }
-
-
 
 .trip_article h1 {
     font-size: 2.5rem;
@@ -661,7 +706,8 @@ footer {
 
 .trip_article h3 {
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: var(--accent2-color);
+    background: var(--primary-color);
 }
 
 .trip_article p {
@@ -711,3 +757,4 @@ footer {
     padding: .75rem;
     font-size: 2rem;
 }
+
